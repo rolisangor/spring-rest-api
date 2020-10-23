@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" th:href="@{/css/login.css}">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div class="form-login">
+        <form class="form-signin" action="/login" method="post">
+            <h2 class="form-signin-heading">Please sign in</h2>
+            <label for="email" class="sr-only">Email address</label>
+            <input type="text" id="email" class="form-control" placeholder="email" required autofocus name="v_email">
+            <label for="password" class="sr-only">Password</label>
+            <input type="password" id="password" class="form-control input-login" placeholder="Password" required name="v_password">
+            <button class="btn btn-lg btn-primary btn-block btn-login" type="submit">Sign in</button>
+        </form>
+    </div>
+
+</div>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

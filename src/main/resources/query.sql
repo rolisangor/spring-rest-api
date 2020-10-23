@@ -1,0 +1,17 @@
+insert into role(name)value ('ADMIN');
+insert into role(name)value ('USER');
+insert into user(first_name, last_name, age, email, password) values ('admin', 'adminus', '30', 'admin@email.com', 'admin');
+insert into user(first_name, last_name, age, email, password) values ('user', 'userus', '31', 'user@email.com', 'user');
+insert into user(first_name, last_name, age, email, password) values ('kami', 'kamikus', '22', 'kami@email.com', 'kami');
+insert into user(first_name, last_name, age, email, password) values ('derik', 'derikus', '11', 'derik@email.com', 'derik');
+insert into user(first_name, last_name, age, email, password) values ('lamar', 'lamarus', '35', 'lamar@email.com', 'lamar');
+insert into user(first_name, last_name, age, email, password) values ('sofi', 'sofius', '29', 'sofi@email.com', 'sofi');
+insert into user(first_name, last_name, age, email, password) values ('linda', 'lindus', '30', 'linda@email.com', 'linda');
+insert into user_roles(user_id, roles_id) VALUES (1,1);
+insert into user_roles(user_id, roles_id) VALUES (1,2);
+insert into user_roles(user_id, roles_id) VALUES (2,1);
+insert into user_roles(user_id, roles_id) VALUES (3,2);
+insert into user_roles(user_id, roles_id) VALUES (4,2);
+insert into user_roles(user_id, roles_id) VALUES (5,2);
+insert into user_roles(user_id, roles_id) VALUES (6,2);
+insert into user_roles(user_id, roles_id) VALUES (7,2);

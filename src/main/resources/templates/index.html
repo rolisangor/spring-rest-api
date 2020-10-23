@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <table>
+        <tr>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Age</th>
+            <th>Email</th>
+        </tr>
+
+        <tr th:each="user: ${user}">
+            <th th:text="${user.username}"></th>
+            <th th:text="${user.password}"></th>
+            <th th:text="${user.age}"></th>
+            <th th:text="${user.email}"></th>
+        </tr>
+    </table>
+</div>
+
+<button><a href="#" th:href="@{/login}">Login</a></button>
+</body>
+</html>
