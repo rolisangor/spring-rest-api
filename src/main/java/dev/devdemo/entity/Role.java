@@ -2,7 +2,6 @@ package dev.devdemo.entity;
 
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
-
 import javax.persistence.*;
 
 @Data

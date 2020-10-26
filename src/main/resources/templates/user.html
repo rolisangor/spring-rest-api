@@ -14,10 +14,9 @@
 <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
     <ul class="navbar-nav px-3">
         <li class="nav-item">
-            <span class="admin-email admin-color" th:text="${currentUser.getEmail()}"></span>
-            <span class="admin-text"> with roles: </span>
-            <span class="admin-color admin-text" th:each="userRole: ${currentUser.getRoles()}"><span
-                    th:text="${userRole.getName()}"></span>&ensp;</span>
+            <span class="admin-email admin-color" id="userInfo"></span>
+            <span class="admin-text">With Role:</span>
+            <span class="admin-color admin-text" id="userRole"></span>
         </li>
     </ul>
     <ul class="navbar-nav px-3 ml-auto">
@@ -51,17 +50,10 @@
                                 <th>Email</th>
                                 <th>Role</th>
                             </tr>
+                            <tbody id="tableBody">
 
-                            <tr>
-                                <td th:text="${currentUser.getId()}">2</td>
-                                <td th:text="${currentUser.getFirstName()}">Admin</td>
-                                <td th:text="${currentUser.getLastName()}">Adminus</td>
-                                <td th:text="${currentUser.getAge()}">30</td>
-                                <td th:text="${currentUser.getEmail()}">admin@email.com</td>
-                                <td><span th:each="role: ${currentUser.getRoles()}"><span
-                                        th:text="${role.getName()}"></span>&ensp;</span></td>
-                                <td>
-                            </tr>
+                            </tbody>
+
                         </table>
                     </div>
                 </div>
@@ -83,5 +75,6 @@
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
 
+<script th:src="@{css/js/user.js}"></script>
 </body>
 </html>

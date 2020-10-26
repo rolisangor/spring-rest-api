@@ -3,7 +3,6 @@ package dev.devdemo.entity;
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-
 import javax.persistence.*;
 import java.util.Collection;
 import java.util.Set;
@@ -28,7 +27,7 @@ public class User implements UserDetails {
     private String password;
 
 
-    @ManyToMany(targetEntity = Role.class, fetch = FetchType.LAZY)
+    @ManyToMany(targetEntity = Role.class, fetch = FetchType.LAZY, cascade = CascadeType.MERGE)
     private Set<Role> roles;
 
     @Override
